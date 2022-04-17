@@ -1,0 +1,388 @@
+/* --------- Computadoras ---------*/
+/* --------- Generales --------- */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+   
+}
+
+html{
+ font-size: 62.5%
+}
+
+body{
+    margin-left: 2px; 
+    margin-right: 2px;
+}
+
+.grid{
+  max-width: 100%;
+  display: grid;
+  grid-template-rows:repeat 1fr 1fr 1fr;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-areas:
+  "logo logo  nav nav"
+  "main main main main"
+  "footer footer footer footer";
+}
+
+
+/* --------- Header --------- */
+header{
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 100;
+}
+
+.logo{
+   grid-area: logo;
+}
+
+.gym_atreus{
+    
+    display: inline-block;
+    width: 150px;
+}
+
+/* --------- Nav --------- */
+nav{
+   grid-area: nav;
+   display: inline-block;
+
+   
+   
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+	list-style-type: none; 
+   font-family: 'Anton', sans-serif;
+   font-size: 2.5rem;
+
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin: 25px;
+
+}
+.menu li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #081115;
+    font-size: 20px;
+}
+
+.calendario{
+    margin-left:30px;
+}
+
+.calendario img{
+   width: 4.5rem;
+} 
+
+/* --------- Main --------- */
+main{
+    grid-area: main;
+    z-index: -1;
+}
+
+/* --------- Footer --------- */
+footer{ 
+  z-index: -1;
+  grid-area: footer;
+}
+
+/* --------- Calendario y Ubicacion --------- */
+.calendario_y_ubicacion{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 50px 30px;
+    
+}
+
+.contenedor1{
+    display: inline-block;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+}
+
+.contenedor1 h2{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 8px;
+}
+
+.correo{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.contenedor1 a{
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.contenedor2{
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+}
+
+.contenedor2 h2{
+  font-family: 'Anton', sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 8px;
+
+}
+
+.contenedor2 p{
+    margin-bottom: 10px;
+}
+
+
+/* --------- Concacto --------- */
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.contenedor3{
+    display: inline-block;
+    
+}
+
+.redes{
+ text-decoration: none;
+ text-align: center;
+ margin-bottom: 5px;
+ color: white;
+
+}
+img{
+    width: 3.2rem;
+}
+
+footer h3{
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+/* --------- Dispositivos Moviles ---------*/
+@media only screen and (max-width: 320px) {
+
+    .grid{
+      
+      display: grid;
+      grid-template-rows:repeat 1fr 1fr 1fr;
+      grid-template-columns:repeat(2,1fr);
+      grid-template-areas:
+      "logo nav"
+      "main main"
+      "footer footer";
+  }
+
+  /* --------- Header --------- */
+  header{
+     width: 320px;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-content:center;
+}
+
+.logo{
+   grid-area: logo;
+}
+
+.gym_atreus{
+    
+    display: inline-block;
+    width: 70px;
+}
+
+/* --------- Nav --------- */
+nav{
+   grid-area: nav;
+   display: inline-block;
+   margin-right: 10px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    list-style-type: none; 
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.menu li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #081115;
+    font-size: 1.7rem;
+}
+
+.calendario{
+   margin-left: 0px;
+
+}
+
+.calendario img{
+   width: 2.5rem;
+} 
+
+/* --------- Generales --------- */
+.body{
+    width: 320px;
+}
+
+main{
+     width: 320px;
+}
+/* --------- Footer --------- */
+#footer{
+    height: 630px;
+}
+
+/* --------- Calendario y Ubicacion --------- */
+.calendario_y_ubicacion{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.contenedor1{
+    display: inline-block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+
+.contenedor1 h2{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 8px;
+}
+
+.correo{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+
+.contenedor1 a{
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+
+.contenedor2{
+    display:inline-block;
+    width: 260px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7rem;
+    border-bottom: solid white 2px;
+    padding-bottom: 50px;
+}
+
+.contenedor2 h2{
+  font-family: 'Anton', sans-serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 8px;
+
+}
+
+.contenedor2 p{
+    margin-bottom: 10px;
+}
+
+
+/* --------- Concacto --------- */
+.contacto{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.contenedor3{
+    display: inline-block;
+    
+}
+
+.redes{
+ text-decoration: none;
+ text-align: center;
+ margin-bottom: 5px;
+ color: white;
+
+}
+img{
+    width: 2.5rem;
+}
+
+footer{
+    width: 320px;
+   z-index: -1;
+}
+footer h3{
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+}
