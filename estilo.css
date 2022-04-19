@@ -73,16 +73,15 @@ ul{
 
 .menu li{
     display: inline-block;
-    text-align: center;
     margin: 25px;
 
 }
 .transition{
+    margin-top: 20px;
     text-decoration: none;
     display: inline-block;
     color: #081115;
     font-size: 20px;
-
     padding:7px 14px;
    position: relative;
     overflow: hidden;
@@ -192,7 +191,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 20px;
+   
 }
 
 .contenedor3{
