@@ -6,7 +6,12 @@
 	box-sizing: border-box;
    
 }
-
+header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
 html{
  font-size: 62.5%
 }
@@ -22,7 +27,7 @@ body{
   grid-template-rows:repeat 1fr 1fr 1fr;
   grid-template-columns:repeat(4,1fr);
   grid-template-areas:
-  "logo logo  nav nav"
+  "header header header header"
   "main main main main"
   "footer footer footer footer";
 }
@@ -30,73 +35,41 @@ body{
 
 /* --------- Header --------- */
 header{
-    width: 100%;
-    background-color: white;
-    z-index: 1;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 100;
-}
+    grid-area: header;
+ }
+.container-fluid{
 
-.logo{
-   grid-area: logo;
-}
-
-.gym_atreus{
-    
-    display: inline-block;
-    width: 150px;
-}
-
-/* --------- Nav --------- */
-nav{
-   grid-area: nav;
-   display: inline-block;
-
-   
-   
-}
-
-ul{
-    display: flex;
-    align-items: center;
-}
-
-.menu{
-	list-style-type: none; 
    font-family: 'Anton', sans-serif;
-   font-size: 2.5rem;
-
+   
 }
 
-.menu li{
-    display: inline-block;
-    margin: 25px;
+.nav-item{
+ 
+    margin-left: 40px;
 
 }
-.transition{
+.nav-link{
     margin-top: 20px;
     text-decoration: none;
     display: inline-block;
     color: #081115;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 100;
     padding:7px 14px;
    position: relative;
     overflow: hidden;
     transition: color 1s;
 }
 
-.transition:hover{
+.nav-link:hover{
     color:white;
 }
 
-.transition::before{
+.nav-link::before{
     content: '';
     position: absolute;
     top: 0%;
-    left: -20px;
+    left: -14.5px;
    width: 0;
    height: 100%;
    background-color:#081115;
@@ -105,17 +78,17 @@ ul{
    transition: width 1s;
 }
 
-.transition:hover:before{
+.nav-link:hover:before{
 width: 150%;
 }
 
-.calendario{
-    margin-left:30px;
+.gym_atreus{
+    width: 150px;
 }
 
-.calendario img{
-   width: 4.5rem;
-} 
+.calendario{
+    width: 50px;
+}
 
 /* --------- Main --------- */
 main{
@@ -227,7 +200,7 @@ footer h3{
       grid-template-rows:repeat 1fr 1fr 1fr;
       grid-template-columns:repeat(2,1fr);
       grid-template-areas:
-      "logo nav"
+      "header header"
       "main main"
       "footer footer";
   }
@@ -235,68 +208,35 @@ footer h3{
   /* --------- Header --------- */
   header{
      width: 320px;
-    width: 100%;
     background-color: white;
     z-index: 1;
-    position: fixed;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-content:center;
+  
 }
-
-.logo{
-   grid-area: logo;
-}
-
 .gym_atreus{
-    
-    display: inline-block;
-    width: 70px;
+    width: 100px;
+ 
 }
 
-/* --------- Nav --------- */
-nav{
-   grid-area: nav;
-   display: inline-block;
-   margin-right: 10px;
-}
 
-ul{
-    display: flex;
-    align-items: center;
-}
-
-.menu{
-    list-style-type: none; 
-    font-family: 'Anton', sans-serif;
-
+.nav-link{
+    font-size: 25px;
 
 }
 
-.menu li{
-    display: inline-block;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 5px;
-    margin-left: 5px;
+.nav-item{
+    margin: auto;
 }
-.menu li a{
-    text-decoration: none;
-    display: inline-block;
-    color: #081115;
-    font-size: 1.7rem;
+
+.cal{
+    margin: auto;
 }
 
 .calendario{
-   margin-left: 0px;
-
+    width: 40px;
 }
 
-.calendario img{
-   width: 2.5rem;
-} 
+/* --------- Nav --------- */
+
 
 /* --------- Generales --------- */
 .body{
@@ -305,6 +245,7 @@ ul{
 
 main{
      width: 320px;
+     z-index: -1;
 }
 /* --------- Footer --------- */
 #footer{
