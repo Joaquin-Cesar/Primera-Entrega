@@ -8,7 +8,7 @@ main{
   color: white;
   background-color: #081115;
   font-family: 'Roboto Condensed', sans-serif;
-
+  z-index: 0;
   font-size: 1.5rem;
 
 }
@@ -99,13 +99,12 @@ iframe{
 footer{
   height:350px;
   color: #081115;
-
+  z-index: 0;
 }
 
-footer a{
+.contenedor1 a{
   color: #081115;
 }
-
 
 
 @media only screen and (max-width: 320px) {

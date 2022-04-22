@@ -8,7 +8,7 @@ main{
   background-color: #081115;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
-
+  z-index: 0;
 }
 
 /* --------- Hero --------- */
@@ -83,12 +83,11 @@ main{
 footer{
   color: #081115;
   height: 350px;
-
+z-index: 0;
 
 }
 
-
-footer a{
+.contenedor1 a{
   color: #081115;
 }
 
