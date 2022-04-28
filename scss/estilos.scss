@@ -1,0 +1,46 @@
+/* --------- Variables--------- */
+@import "color";
+@import "mobile";
+
+/* --------- Main --------- */
+main{
+    height: 800px;
+    background-image: url("../imagenes/fondo de index.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+   
+   
+   
+   
+   .titulo{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    color: $amarillo;
+    font-size: 50px;
+    font-weight: 100;
+    width: 450px;
+    text-align: center;
+    margin-top: 270px;
+    margin-right: 10px;
+   }
+}
+   
+   /* --------- Footer --------- */
+   footer{
+     height: 360px;
+     color: $blanco;
+     background-color: $oscuro;
+     z-index: 0;
+   
+   
+   
+   
+    a{
+     color: $blanco;
+   }
+}
+  

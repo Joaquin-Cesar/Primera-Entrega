@@ -1,0 +1,22 @@
+{
+  "name": "gymbross_joaquin_cesar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass scss/estilos.scss css/estilo_para_index.css",
+    "watch": "sass scss/estilos.scss css/estilo_para_index.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joaquin-Cesar/Primera-Entrega.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joaquin-Cesar/Primera-Entrega/issues"
+  },
+  "homepage": "https://github.com/Joaquin-Cesar/Primera-Entrega#readme"
+}

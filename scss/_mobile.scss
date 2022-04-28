@@ -1,0 +1,35 @@
+@import "color";
+
+@media only screen and (max-width: 320px) {
+     
+    main{
+      display: flex;     
+      justify-content: center;
+      
+      
+   
+  
+    .titulo{
+     font-family: 'Anton', sans-serif;
+     font-style: italic;
+     color: $amarillo;
+     font-size: 2.5rem;
+     font-weight: 100;
+     width: 220px;
+     text-align: center;
+     margin-top: 100px;
+     
+   }
+}
+   
+  
+  .contenedor1{
+     border-bottom: solid white 2px;
+   }
+  
+   .contenedor2{
+     border-bottom: solid white 2px;
+   }
+   
+  
+  }
