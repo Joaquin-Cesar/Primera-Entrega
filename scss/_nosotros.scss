@@ -1,0 +1,95 @@
+/* --------- Main --------- */
+.nosotros{
+    height: 3000px;
+    font-size: 2rem;
+    background-color: $oscuro;
+    color: $blanco;
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: 0;
+  }
+  
+  /* --------- Hero --------- */
+  .fondo{
+    height: 700px;
+    background-image: url("../imagenes/fondo 1 de nosotros.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    
+  }
+  
+  /* --------- Contenido --------- */
+  .grupo{
+   text-align: center;
+   display: flex;  flex-direction: row; 
+   justify-content: space-around;
+   align-items: center;
+   width: 1300px; 
+   margin-top: 50px;
+  
+  }
+  
+  .Equipo{
+    display: inline-block;
+    width: 500px;
+    
+  
+  
+   h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    float: right;
+  } 
+  
+  p{
+    float: left;
+  }
+ }
+  
+  .todos{ 
+      img{
+    width: 500px;
+  
+  }
+}
+  
+  .profesor{
+    width: 300px;
+  }
+  
+  .profesora{
+    width: 300px;
+  }
+  
+  .nutricionista{
+    width: 300px;
+  }
+  
+  
+  
+  .title{
+   font-family: 'Anton', sans-serif;
+   font-style: italic;
+   font-size: 40px;
+   font-weight: 100;
+   text-align: center;
+   margin-top: 50px; 
+  
+  
+  }
+  
+  /* --------- Footer --------- */
+  #footer1{
+    color: $oscuro;
+    height: 350px;
+  z-index: 0;
+  
+  
+  
+  .contenedor1{ 
+      a{
+    color: $oscuro;
+  }
+}
+}

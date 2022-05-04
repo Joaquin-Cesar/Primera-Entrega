@@ -1,0 +1,109 @@
+/* --------- Main --------- */
+.blog{
+    margin-top: 80px;
+    height: 2400px;
+    color: $blanco;
+    background-color: $oscuro;
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: 0;
+    font-size: 1.5rem;
+  
+  }
+  
+  /* --------- Hero --------- */
+  .inicio{
+    height: 400px;
+    background-image: url("../imagenes/fondo blog2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom; 
+
+    h2{
+        font-family: 'Anton', sans-serif;
+        font-style: italic;
+        font-size: 80px;
+        font-weight: 100;
+        text-align: center;
+       }
+  }
+  
+ 
+  
+  /* --------- Contenido --------- */
+  .titulos{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  
+  /* --------- Antes y Despues --------- */
+  .AyD{
+   display: flex;  flex-direction: row; 
+   justify-content: space-evenly;
+  }
+  
+  
+  .chica1{
+    width: 300px;
+    height: 400px;
+    background-image: url("../imagenes/chica1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .chica2{
+   width: 300px;
+   height: 400px;
+   background-image: url("../imagenes/chica2.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+  }
+  
+  .hombre1{
+   width: 300px;
+   height: 400px;
+   background-image: url("../imagenes/hombre3.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+  }
+  
+  .testimonios{
+      background-color: $blanco;
+    color: $oscuro;
+    padding: 15px;
+    margin-top: 100%;
+  }
+  
+  /* --------- Entrenamientos y Recetas --------- */
+  .videos{
+      display: flex;  flex-direction: row; 
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   align-content: space-around;
+   height: 500px;
+  }
+  
+  iframe{
+      border: solid $blanco 2px;
+  }
+  
+  /* --------- Footer --------- */
+  #footer1{
+    height:350px;
+    color: $oscuro;
+    z-index: 0;
+
+    .contenedor1{ a{
+      color: $oscuro;
+    }
+  }
+  }
+  
+ 

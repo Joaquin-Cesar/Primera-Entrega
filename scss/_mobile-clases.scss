@@ -1,0 +1,113 @@
+
+@media only screen and (max-width: 320px) {
+  /* --------- Header --------- */  
+  header{
+      width: 320px;
+      z-index: 1;
+      
+  
+    }
+  /* --------- Main --------- */
+    .clases{
+     width: 320px;
+     height: 2300px;
+     font-size: 1.7rem;
+     z-index: -1;
+   }
+  
+   .Que-ofrecemos{
+   margin-top: 150px;
+    text-align: center;
+    margin-bottom: 70px;
+  
+     h2{
+        font-family: 'Anton', sans-serif;
+        font-style: italic;
+        font-size: 2.5rem;
+        font-weight: 100;
+        margin-bottom: 15px;
+        
+       }  
+  }
+  
+ 
+  
+  .imagen{
+    width: 320px;
+    display: flex;  flex-direction:column; 
+    margin-left: 35px;
+
+    div{
+        width: 250px;
+        text-align: center;
+       }
+
+       p{
+        margin-top: 20px;
+        display: inline-block; 
+      }
+  }
+  
+
+  
+  .padre1{
+    margin-bottom: 50px;
+    width: 320px;
+  }
+  .gym {
+    width: 250px;
+    height: 350px;
+    background-image: url("../imagenes/imagen1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .padre2{
+    margin-bottom: 50px;
+    width: 320px;
+  }
+  .fun{
+    width: 250px;
+    height: 350px;
+    background-image: url("../imagenes/funcional5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .padre3{
+    
+    width: 320px;
+  }
+  
+  .box{
+    width: 250px;
+    height: 350px;
+    background-image: url("../imagenes/boxeo1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  
+  /* --------- Footer --------- */
+  #footer1{
+    z-index: -1;
+    
+    .contenedor1{
+      border-bottom: solid $oscuro 2px;
+     }
+     
+     .contenedor2{
+      border-bottom: solid $oscuro 2px;
+     }
+     
+     
+  }
+  
+  
+  
+  
+  
+  }
