@@ -50,32 +50,29 @@
     align-items:  center;
   }
   
-  
-  .chica1{
+  @mixin antes-despues{
     width: 250px;
     height: 350px;
-    background-image: url("../imagenes/chica1.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 90px;
   }
+
+  .chica1{
+    @include antes-despues;
+    background-image: url("../imagenes/chica1.png");
+   }
   
   .chica2{
-   width: 250px;
-   height: 350px;
+    @include antes-despues;
    background-image: url("../imagenes/chica2.png");
-   background-size: cover;
-   background-repeat: no-repeat;
-   margin-bottom: 90px;
+   
   }
   
   .hombre1{
-   width: 250px;
-   height: 350px;
+    @include antes-despues;
    background-image: url("../imagenes/hombre3.png");
-   background-size: cover;
-   background-repeat: no-repeat;
-   margin-bottom: 50px
+   
   }
   
   .testimonios{
@@ -102,13 +99,13 @@
   
   /* --------- Footer --------- */
   #footer1{
-  .contenedor1{
-   border-bottom: solid $oscuro 2px;
-  }
-  
-  .contenedor2{
-   border-bottom: solid $oscuro 2px;
-  }
+    .contenedor1{
+      @include linea-negra;
+    }
+    
+    .contenedor2{
+      @include linea-negra;
+    }
   
 }
   }

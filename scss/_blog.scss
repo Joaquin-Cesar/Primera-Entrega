@@ -40,37 +40,41 @@
     margin-bottom: 50px;
   }
   
+  .ryc{
+    margin-top: 90px;
+  }
+
   /* --------- Antes y Despues --------- */
   .AyD{
    display: flex;  flex-direction: row; 
    justify-content: space-evenly;
   }
   
-  
-  .chica1{
+  @mixin antes-despues{
     width: 300px;
     height: 400px;
-    background-image: url("../imagenes/chica1.png");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  
+  .chica1{
+    @include antes-despues;
+    background-image: url("../imagenes/chica1.png");
+    
     
   }
   
   .chica2{
-   width: 300px;
-   height: 400px;
+    @include antes-despues;
    background-image: url("../imagenes/chica2.png");
-   background-size: cover;
-   background-repeat: no-repeat;
+  
    
   }
   
   .hombre1{
-   width: 300px;
-   height: 400px;
+    @include antes-despues;
    background-image: url("../imagenes/hombre3.png");
-   background-size: cover;
-   background-repeat: no-repeat;
+   
    
   }
   
@@ -99,11 +103,16 @@
     height:350px;
     color: $oscuro;
     z-index: 0;
+   
+    .lightbox {
+      color: white;
+    }
 
     .contenedor1{ a{
       color: $oscuro;
     }
   }
+
   }
   
  

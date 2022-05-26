@@ -23,12 +23,17 @@
 }
    /* --------- Footer --------- */
   #footer{
+
+    @mixin linea-blanca{
+      border-bottom: solid $blanco 2px;
+    }
+
   .contenedor1{
-     border-bottom: solid $blanco 2px;
+    @include linea-blanca;
    }
   
    .contenedor2{
-     border-bottom: solid $blanco 2px;
+    @include linea-blanca;
    }
   }
   

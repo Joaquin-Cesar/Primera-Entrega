@@ -33,9 +33,9 @@
  
   
   .imagen{
-    width: 320px;
+  
     display: flex;  flex-direction:column; 
-    margin-left: 35px;
+    align-items: center;
 
     div{
         width: 250px;
@@ -48,32 +48,35 @@
       }
   }
   
-
-  
-  .padre1{
+  @mixin padre{
     margin-bottom: 50px;
     width: 320px;
   }
-  .gym {
+  
+  @mixin tipo{
     width: 250px;
     height: 350px;
-    background-image: url("../imagenes/imagen1.png");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+  }
+
+  .padre1{
+    @include padre;
+  }
+  .gym {
+    @include tipo;
+    background-image: url("../imagenes/imagen1.png");
+    
   }
   
   .padre2{
-    margin-bottom: 50px;
-    width: 320px;
+    @include padre;
   }
   .fun{
-    width: 250px;
-    height: 350px;
+    @include tipo;
     background-image: url("../imagenes/funcional5.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+   
   }
   
   .padre3{
@@ -82,12 +85,9 @@
   }
   
   .box{
-    width: 250px;
-    height: 350px;
+    @include tipo;
     background-image: url("../imagenes/boxeo1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+  
   }
   
   
@@ -96,12 +96,12 @@
     z-index: -1;
     
     .contenedor1{
-      border-bottom: solid $oscuro 2px;
-     }
-     
-     .contenedor2{
-      border-bottom: solid $oscuro 2px;
-     }
+      @include linea-negra;
+    }
+    
+    .contenedor2{
+      @include linea-negra;
+    }
      
      
   }

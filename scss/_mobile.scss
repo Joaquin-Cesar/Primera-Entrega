@@ -26,7 +26,13 @@
 
 
 .nav-link{
-    font-size: 25px;
+    
+   &:hover{
+       background-color: $blanco;
+       color: $oscuro;
+   }
+
+    
 
 }
 

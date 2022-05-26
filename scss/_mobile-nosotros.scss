@@ -8,7 +8,7 @@
     /* --------- Main --------- */
     .nosotros{
       width: 320px;
-      height: 3500px;
+      height: 3700px;
       font-size: 1.7rem;
       background-color: $oscuro;
       color: $blanco;
@@ -66,24 +66,29 @@
   }
 }
   
+  
   .todos{
     width: 320px;
     display: none;
   }
   
+  @mixin margin{
+    width: 300px;
+  }
+
   .profesor{
     width: 250px;
-    margin-bottom: 30px;
+    @include margin;
   }
   
   .profesora{
     width: 250px;
-    margin-bottom: 30px;
+    @include margin;
   }
   
   .nutricionista{
     width: 250px;
-    margin-bottom: 30px;
+    @include margin;
   }
   
   
@@ -101,12 +106,13 @@
   
   /* --------- Footer --------- */
   #footer1{
+
   .contenedor1{
-   border-bottom: solid $oscuro 2px;
+    @include linea-negra;
   }
   
   .contenedor2{
-   border-bottom: solid $oscuro 2px;
+    @include linea-negra;
   }
 }
   

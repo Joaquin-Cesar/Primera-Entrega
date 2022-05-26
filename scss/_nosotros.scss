@@ -53,17 +53,21 @@
   
   }
 }
-  
+
+@mixin tamaño{
+  width: 300px;
+}
+
   .profesor{
-    width: 300px;
+    @include tamaño;
   }
   
   .profesora{
-    width: 300px;
+    @include tamaño;
   }
   
   .nutricionista{
-    width: 300px;
+    @include tamaño;
   }
   
   
@@ -91,5 +95,9 @@
       a{
     color: $oscuro;
   }
+}
+
+.lightbox {
+  color: white;
 }
 }

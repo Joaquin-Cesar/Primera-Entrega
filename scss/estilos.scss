@@ -11,13 +11,11 @@
 
 
 html{
- font-size: 62.5%
+ font-size: 62.5%;
+ line-height: 1.317101995;
+ scroll-behavior: smooth;
 }
 
-body{
-    margin-left: 2px; 
-    margin-right: 2px;
-}
 
 .grid{
     max-width: 100%;
@@ -48,45 +46,53 @@ body{
    .nav-item{
     
        margin-left: 40px;
-   
+       background-color: $blanco;
    }
    
    .nav-link{
-      margin-top: 20px;
-      text-decoration: none;
-      display: inline-block;
-      color: $oscuro;
-      font-size: 25px;
-      font-weight: 100;
-      padding:7px 14px;
-     position: relative;
-      overflow: hidden;
-      transition: color 1s;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+   color: $oscuro;
+   font-size: 25px;
+   font-weight: 100;
+   overflow: hidden;
+   transition: all 500ms ease;
+    margin-top: 20px;
+    border-radius: 4px;
+     padding:7px 14px;
+    z-index: 0;
+    cursor: pointer;
+  
 
-      &:hover{
-        color:$blanco;
-    }
-
-     &::before{
-        content: '';
+      &::before {
+        content: "";
         position: absolute;
-        top: 0%;
-        left: -14.5px;
-       width: 0;
-       height: 100%;
-       background-color: $oscuro;
-       transform: skewX(35deg);
-       z-index: -1;
-       transition: width 1s;
-    }
-
-    &:hover:before{
-        width: 150%;
-        }
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        background-color: $oscuro;
+        transition: all 500ms ease;
+        z-index: -1;
+       
   }
   
-  
-  
+  &:hover{
+        background-color: $oscuro;
+        color: $blanco;
+  }
+}
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0 $oscuro;
+      }
+      100% {
+        box-shadow: 0 0 8px 16px rgba(0, 0, 0, 0);
+      }
+} 
   
   
   
@@ -203,7 +209,177 @@ img{
 }
 
 
+  
+  /* Formulario */
+.lightbox {
+    display: none;
+  
+  /* lightbox abierto */
+    &:target {
+    position: absolute;
+    left: 0;
+    top: 320px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
 
+  /* Botón Cerrar */
+   .close {
+    position: relative;
+    display: block;
+  
+  
+   &::after {
+    right: -32rem;
+    top: -50.8rem;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    content: "×";
+    cursor: pointer;
+  }
+  
+  /* superposición Lightbox */
+  &::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    content: "";
+    cursor: default;
+  }
+}
+  }
+    /* Formulario */
+.content {
+    max-width: 1170px;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+
+    span {
+ 
+color: #f1e924;
+}
+}
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+
+
+ form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+ label {
+    display: block;
+ }
+
+  p {
+    margin: 0;
+    padding: 1em;
+    grid-column: 1 / 3;
+}
+
+  .block {
+    grid-column: 1 / 3;
+}
+}
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #f1e924;
+}
+
+.contact-form form button {
+    background: #f1e924;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+
+
+&:hover,
+&:focus {
+    background: #f1e924;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+}
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+
+
+ h4,  ul,  p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+}
+
+/*Formulario en formato mobile*/
+@media(min-width: 700px) {
+    .lightbox:target {
+        top: 280px;
+
+        .close::after{
+            top: -44.7rem;
+            left: 115.5rem;
+        }
+      }
+    
+      
+  
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+} 
 
 /* --------- Dispositivos Moviles ---------*/
 @import "mobile";
